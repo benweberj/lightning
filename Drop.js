@@ -18,7 +18,7 @@ class Drop {
   }
 
   spawn() {
-    this.pos = createVector(random(width), random(-1000, -500))
+    this.pos = createVector(random(width), -random(window.innerHeight))
     this.vel = createVector()
     this.g = createVector(0, random(.03, .2))
     this.width = random(1, 5)
